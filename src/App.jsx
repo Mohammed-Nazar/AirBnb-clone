@@ -8,20 +8,21 @@ import Data from "./data.js";
 function App() {
   const cardsData = Data.map((cardData) => (
     <Card
-      spots={cardData.openSpots}
       key={cardData.id}
-      title={cardData.title}
-      img={cardData.coverImg}
-      rate={cardData.stats.rating}
-      revCount={cardData.stats.reviewCount}
-      price={cardData.price}
-      reg={cardData.location}
+      {...cardData}
+      // spots={cardData.openSpots}
+      // title={cardData.title}
+      // img={cardData.coverImg}
+      // rate={cardData.stats.rating}
+      // revCount={cardData.stats.reviewCount}
+      // price={cardData.price}
+      // reg={cardData.location}
     />
   ));
   return (
     <>
       <Navbar />
-      <MainCon/>
+      <MainCon />
       <div className="Card">{cardsData}</div>
     </>
   );
