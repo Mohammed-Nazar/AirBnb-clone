@@ -1,0 +1,54 @@
+.Card {
+    display: flex;
+    flex-direction: row;
+   
+    overflow-x: scroll;
+}
+
+.Card--item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.card-img{
+    border-radius: 10px;
+}
+
+.rate {
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.rate img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.rate p span{
+    color: #918E9B;
+}
+
+.Card--info p{
+    margin-top: 5px;
+}
+
+.Card--info p span {
+    font-weight: bolder;
+}
+
+.sold {
+    position: absolute;
+    margin-left:5px;
+    margin-top: 5px;
+    width: fit-content;
+    background-color: rgba(240, 248, 255, 0.805);
+    padding: 2px;
+    border-radius: 5px;
+}
